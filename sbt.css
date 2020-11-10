@@ -1,3 +1,16 @@
 body {
   background-color: #fff;
 }
+
+ul.filters-button-group li {
+  vertical-align: top;
+}
+ul.filters-button-group li a input {
+  border: 1px solid #eee;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 5px 40px;
+  border-radius: 0;
+}
