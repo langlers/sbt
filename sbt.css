@@ -9,7 +9,7 @@ body {
 ul.filters-button-group li {
   vertical-align: top;
 }
-ul.filters-button-group li a input {
+ul.filters-button-group li input {
   border: 1px solid #eee;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
@@ -22,7 +22,7 @@ ul.filters-button-group li a input {
 
 /* Recent Content */
 .recent-articles {
-  
+
 }
 .recent-articles .recent-articles-title {
   display: none;
