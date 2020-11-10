@@ -49,9 +49,9 @@ $(document).ready(function() {
     }
 
     // layout Isotope after each image loads
-       $grid.imagesLoaded().progress( function() {
-            $grid.isotope('layout');
-        });
+    $grid.imagesLoaded().progress( function() {
+        $grid.isotope('layout');
+    });
 
     // filter items on button click
     $('.filters-button-group').on( 'click', '.button', function(e) {

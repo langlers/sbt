@@ -2,6 +2,10 @@ body {
   background-color: #fff;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .category-main-title {
   font-size: 50px;
   letter-spacing: 2px;
@@ -57,6 +61,11 @@ ul.filters-button-group li input {
 }
 .card {
   width: 33.33333333% !important;
+}
+.recent-articles .card {
+  max-width: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 .card .card-body {
   overflow: hidden;
