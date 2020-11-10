@@ -2,6 +2,10 @@ body {
   background-color: #fff;
 }
 
+/* Filter and search bar styles */
+.filters-button-group {
+  margin-bottom: 0;
+}
 ul.filters-button-group li {
   vertical-align: top;
 }
@@ -13,4 +17,13 @@ ul.filters-button-group li a input {
   letter-spacing: 1px;
   padding: 5px 40px;
   border-radius: 0;
+}
+
+
+/* Recent Content */
+.recent-articles {
+  
+}
+.recent-articles .recent-articles-title {
+  display: none;
 }
