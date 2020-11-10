@@ -51,7 +51,7 @@ ul.filters-button-group li input {
 
 /* Card Deck and Cards for Recent Content */
 .card-deck {}
-.card, .card * {
+.card { /* , .card * */
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -63,7 +63,9 @@ ul.filters-button-group li input {
   position: relative;
 }
 .card .card-body .recent-articles-image-container {
-  display: none;
+  display: block !important;
+  position: relative !important;
+  padding-top: 100% !important;
 }
 .card .card-body h6.card-title {
   display: block;
