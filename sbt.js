@@ -16,6 +16,9 @@ $(document).ready(function() {
         layoutMode: 'fitRows',
         filter: function() {
             return qsRegex ? $(this).find('.recent-articles-title').text().match( qsRegex ) : true;
+        },
+        getSortData: {
+            title: '.recent-articles-title' // text from querySelector
         }
     });
 
@@ -53,5 +56,26 @@ $(document).ready(function() {
         $(".filters-button-group a").removeClass("active");
         $(this).addClass("active");
     });
+
+    // sort items on button click
+    $('.sort-button-group').on( 'click', '.button', function() {
+        var sortValue = $(this).attr('data-sort-value');
+        // make an array of values
+        sortValue = sortValue.split(',');
+        $grid.isotope({ sortBy: sortValue });
+        $(".sort-button-group a").removeClass("active");
+        $(this).addClass("active");
+    });
+
+
+    /* Change card images into background images */
+    var $cardImg = $('.recent-articles-image-container img');
+    $('.card-deck .card').each(function() {
+        var imgSrc = $(this).find('.recent-articles-image-container img').attr('src').hide();
+        $(this).find('card-body').css('background-image', " url('" + imgSrc + "') ");
+    });
+
+
+
 });
 
