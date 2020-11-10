@@ -81,6 +81,7 @@ $(document).ready(function() {
         $img.remove();
         $(this).addClass('col-md-4');
         $(this).find('.card-body h6.card-title').css('background-image', " url('" + imgSrc + "') ");
+        $grid.isotope('layout');
     });
 
 
