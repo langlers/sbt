@@ -83,7 +83,7 @@ $(document).ready(function() {
         $img.remove();
         $cardTitle.empty();
         $(this).addClass('col-md-4');
-        $(this).find('.recent-article-teaser-body').prepend('<h3>').text(title);
+        $(this).find('.recent-article-teaser-body').prepend('<h3>' + title + '</h3>');
         $cardTitle.css('background-image', " url('" + imgSrc + "') ");
         $grid.isotope('layout');
     });
