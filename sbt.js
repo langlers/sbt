@@ -80,7 +80,7 @@ $(document).ready(function() {
         var imgSrc = $img.attr('src');
         var $cardTitle = $(this).find('.card-body h6.card-title');
         var title = $cardTitle.text();
-        var $cardBody = $(this).find('.recent-article-teaser-body');
+        var $cardBody = $(this).find('.hide_images_in_container');
         $img.remove();
         $cardTitle.empty();
         $(this).addClass('col-md-4');
