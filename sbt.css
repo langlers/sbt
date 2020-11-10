@@ -21,9 +21,9 @@ ul.filters-button-group li input {
 
 
 /* Recent Content */
-.recent-articles {
-
+.recent-articles.image-title-description-layout {
+  margin-top: 0;
 }
-.recent-articles .recent-articles-title {
+.recent-articles h3.recent-articles-title {
   display: none;
 }
