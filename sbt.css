@@ -153,7 +153,32 @@ ul.filters-button-group li input {
   transition: all 0.4s ease-in 0s;
   transition-delay: 0.3s;
 }
-.card .card-body .recent-article-teaser-body .hide_images_in_container {}
+.card .card-body .recent-article-teaser-body .hide_images_in_container {
+  margin: 0 30px;
+  position: relative;
+  top: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+  transition-delay: 0.3s;
+  transform: translateY(-70%) scale(0.4,0.4);
+  -ms-transform: translateY(-70%) scale(0.4,0.4);
+  -webkit-transform: translateY(-70%) scale(0.4,0.4);
+  z-index: 1;
+}
+.card .card-body .recent-article-teaser-body .hide_images_in_container h3 {
+  color: #fff;
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+.card .card-body .recent-article-teaser-body .hide_images_in_container p {
+  font-family: quicksand;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
 .card .card-footer {
   z-index: 2;
   -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
