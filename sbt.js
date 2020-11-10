@@ -78,7 +78,7 @@ $(document).ready(function() {
     $('.card-deck .card').each(function() {
         var $img = $(this).find('.recent-articles-image-container img');
         var imgSrc = $img.attr('src');
-        var $cardTitle = $(this).find('.card-body h6.card-title');
+        var $cardTitle = $(this).find('.card-body h6.card-title a');
         var title = $cardTitle.text();
         var $cardBody = $(this).find('.hide_images_in_container');
         $img.remove();
