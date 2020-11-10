@@ -78,11 +78,11 @@ $(document).ready(function() {
     $('.card-deck .card').each(function() {
         var $img = $(this).find('.recent-articles-image-container img');
         var imgSrc = $img.attr('src');
-        var $cardTitle = $(this).find('.card-body h6.card-title a');
+        var $cardTitle = $(this).find('.card-body h6.card-title');
         var title = $cardTitle.text();
         var $cardBody = $(this).find('.hide_images_in_container');
         $img.remove();
-        $cardTitle.empty();
+        $cardTitle.find('a').text('');
         $(this).addClass('col-md-4');
 
         $cardBody.prepend('<h3>' + title + '</h3>');
