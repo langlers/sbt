@@ -63,13 +63,14 @@ ul.filters-button-group li input {
   width: 33.33333333% !important;
 }
 .recent-articles .card {
-  max-width: auto !important;
+  max-width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 .card .card-body {
   overflow: hidden;
   position: relative;
+  margin: 5px !important;
 }
 .card .card-body .recent-articles-image-container {
   display: block !important;
