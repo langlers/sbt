@@ -80,10 +80,13 @@ $(document).ready(function() {
         var imgSrc = $img.attr('src');
         var $cardTitle = $(this).find('.card-body h6.card-title');
         var title = $cardTitle.text();
+        var $cardBody = $(this).find('.recent-article-teaser-body');
         $img.remove();
         $cardTitle.empty();
         $(this).addClass('col-md-4');
-        $(this).find('.recent-article-teaser-body').prepend('<h3>' + title + '</h3>');
+
+        $cardBody.prepend('<h3>' + title + '</h3>');
+        $(this).find('.card-footer').appendTo($cardBody);
         $cardTitle.css('background-image', " url('" + imgSrc + "') ");
         $grid.isotope('layout');
     });
