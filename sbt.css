@@ -51,9 +51,12 @@ ul.filters-button-group li input {
 
 /* Card Deck and Cards for Recent Content */
 .card-deck {}
-.card * {
-  margin: 0;
-  padding: 0;
+.card, .card * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.card {
+  width: 33.33333333% !important;
 }
 .card .card-body {
   overflow: hidden;

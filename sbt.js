@@ -19,6 +19,11 @@ $(document).ready(function() {
         },
         getSortData: {
             title: '.recent-articles-title' // text from querySelector
+        },
+        percentPosition: true,
+        masonry: {
+            // use element for option
+            columnWidth: '.card'
         }
     });
 
@@ -74,7 +79,7 @@ $(document).ready(function() {
         var $img = $(this).find('.recent-articles-image-container img');
         var imgSrc = $img.attr('src');
         $img.remove();
-        $(this)
+        $(this).addClass('col-md-4');
         $(this).find('.card-body h6.card-title').css('background-image', " url('" + imgSrc + "') ");
     });
 
