@@ -50,6 +50,8 @@ $(document).ready(function() {
         e.preventDefault();
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
+        $(".filters-button-group a").removeClass("active");
+        $(this).addClass("active");
     });
 });
 
