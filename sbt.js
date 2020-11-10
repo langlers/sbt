@@ -15,11 +15,7 @@ $(document).ready(function() {
         itemSelector: '.card',
         layoutMode: 'fitRows',
         filter: function() {
-<<<<<<< HEAD
             return qsRegex ? $(this).find('.recent-articles-title').text().match( qsRegex ) : true;
-=======
-            return qsRegex ? $(this).text().match( qsRegex ) : true;
->>>>>>> ca0849971c9df0a817159ea56ade37ae94abcf50
         }
     });
 
