@@ -46,3 +46,40 @@ ul.filters-button-group li input {
 .recent-articles h3.recent-articles-title {
   display: none;
 }
+
+
+
+/* Card Deck and Cards for Recent Content */
+.card-deck {}
+.card {}
+.card .card-body {
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.card .card-body .recent-articles-image-container {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  webkit-transition: all 0.6s cubic-bezier(0.9, 0, 0.3, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.9, 0, 0.3, 1);
+  -ms-transition: all 0.6s cubic-bezier(0.9, 0, 0.3, 1);
+  -o-transition: all 0.6s cubic-bezier(0.9, 0, 0.3, 1);
+  transition: all 0.6s cubic-bezier(0.9, 0, 0.3, 1);
+}
+.card .card-body h6.card-title {}
+.card .card-body h6.card-title a {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.card .card-body .recent-article-teaser-body {}
+.card .card-footer {}

@@ -71,8 +71,10 @@ $(document).ready(function() {
     /* Change card images into background images */
     var $cardImg = $('.recent-articles-image-container img');
     $('.card-deck .card').each(function() {
-        var imgSrc = $(this).find('.recent-articles-image-container img').attr('src').hide();
-        $(this).find('card-body').css('background-image', " url('" + imgSrc + "') ");
+        var $img = $(this).find('.recent-articles-image-container img');
+        var imgSrc = $img.attr('src');
+        $img.remove();
+        $(this).find('.card-body .recent-articles-image-container').css('background-image', " url('" + imgSrc + "') ");
     });
 
 
