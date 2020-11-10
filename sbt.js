@@ -44,9 +44,9 @@ $(document).ready(function() {
     }
 
     // layout Isotope after each image loads
-       /* $grid.imagesLoaded().progress( function() {
+       $grid.imagesLoaded().progress( function() {
             $grid.isotope('layout');
-        }); */
+        });
 
     // filter items on button click
     $('.filters-button-group').on( 'click', '.button', function(e) {
@@ -74,7 +74,8 @@ $(document).ready(function() {
         var $img = $(this).find('.recent-articles-image-container img');
         var imgSrc = $img.attr('src');
         $img.remove();
-        $(this).find('.card-body .recent-articles-image-container').css('background-image', " url('" + imgSrc + "') ");
+        $(this)
+        $(this).find('.card-body h6.card-title').css('background-image', " url('" + imgSrc + "') ");
     });
 
 
