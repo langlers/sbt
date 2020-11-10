@@ -46,7 +46,8 @@ $(document).ready(function() {
         }); */
 
     // filter items on button click
-    $('.filters-button-group').on( 'click', '.button', function() {
+    $('.filters-button-group').on( 'click', '.button', function(e) {
+        e.preventDefault();
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
     });
