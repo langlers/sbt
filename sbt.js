@@ -78,9 +78,13 @@ $(document).ready(function() {
     $('.card-deck .card').each(function() {
         var $img = $(this).find('.recent-articles-image-container img');
         var imgSrc = $img.attr('src');
+        var $cardTitle = $(this).find('.card-body h6.card-title');
+        var title = $cardTitle.text();
         $img.remove();
+        $cardTitle.empty();
         $(this).addClass('col-md-4');
-        $(this).find('.card-body h6.card-title').css('background-image', " url('" + imgSrc + "') ");
+        $(this).find('.recent-article-teaser-body').prepend('<h3>').text(title);
+        $cardTitle.css('background-image', " url('" + imgSrc + "') ");
         $grid.isotope('layout');
     });
 

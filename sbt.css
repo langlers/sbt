@@ -152,6 +152,7 @@ ul.filters-button-group li input {
   transition: all 0.4s ease-in 0s;
   transition-delay: 0.3s;
 }
+.card .card-body .recent-article-teaser-body .hide_images_in_container {}
 .card .card-footer {
   z-index: 2;
   -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.4, 1);
