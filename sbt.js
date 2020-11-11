@@ -87,6 +87,7 @@ $(document).ready(function() {
         $(this).find('.card-footer').appendTo($cardBody);
         $cardTitle.css('background-image', " url('" + imgSrc + "') ");
         $cardTitle.find('a').text('');
+        $cardTitle.after('<div class="img-mask">');
         $grid.isotope('layout');
     });
 
