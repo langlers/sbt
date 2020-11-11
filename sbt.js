@@ -1,11 +1,11 @@
 //console.log('sbt.js');
 
-
 //jQuery(function($){
     /* jQuery isolated and on dom ready. */
 
 
 $(document).ready(function() {
+    jQuery.migrateMute = true;
 
     // quick search regex
     var qsRegex;
