@@ -7,10 +7,11 @@
 	/* Set body to half width and move images to right col. */
 	var $imgCol = $('<div class="img-grid col-lg-6">');
 	$articleBody.removeClass('w-100').addClass('col-lg-6');
-	$articleBody.append($imgCol);
+	$articleBody.after($imgCol);
 	$articleBody.find('img').each(function(){
 		$(this).appendTo($imgCol);
 	});
+	$article.find('.col-lg-6').wrapAll('<div class="row">');
 
 	/* Wrap first sentence */
 	var $firstP = $article.find('.article-body p:first');
