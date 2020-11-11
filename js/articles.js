@@ -25,7 +25,7 @@
 				}
 			});
 			$grid.imagesLoaded(function(){
-				$grid.isotope();
+				$grid.isotope('layout');
 			});
 		};
 	});
