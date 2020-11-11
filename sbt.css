@@ -23,16 +23,18 @@ body.homepages_members #homepageNav {
   background-color: #000;
 }
 #homepageNav .menu-box {
-  border-bottom: 1px solid #eee;
+  border-bottom: none;
   border-top: none;
   text-align: center;
-  width: 100%;
-  margin-top: -95px;
+  color: #fff;
   background-color: #000;
   position: relative;
   display: table !important;
   width: auto;
   margin: -97px auto 0;
+}
+#homepageNav .navigation li a {
+  color: #fff;
 }
 body.homepages #headerNav,
 body.homepages_members #headerNav {
