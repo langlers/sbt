@@ -27,12 +27,6 @@
             triggerOnce: true
         });
 
-        //isotope setting(portfolio)
-        var $container = $('.portfolio-body');
-        $container.imagesLoaded(function() {
-            $container.isotope();
-        });
-
         // Custom transform modifier for Stellar.js
         $.stellar.positionProperty.transform3d = {
             setPosition: function(element, newLeft, originalLeft, newTop, originalTop) {
@@ -177,7 +171,7 @@
     });
 
     // Video responsive
-    $("body").fitVids();
+    //$("body").fitVids();
 
 
 
@@ -214,24 +208,6 @@
         effect: 'fade'
     });
 
-    // filter items when filter link is clicked
-    var $container = $('.portfolio-body');
-    $('.port-filter a').on('click', function() {
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            itemSelector: '.port-item',
-            filter: selector
-        });
-        return false;
-    });
-
-    //adding active state to portfolio filtr
-    $(".port-filter a").on('click', function() {
-        $(".port-filter a").removeClass("active");
-        $(this).addClass("active");
-        setTimeout("$.stellar('refresh');", 600); //refresh stellar alignment
-    });
-
-
+    
 
 })(jQuery);
