@@ -2,6 +2,15 @@ body {
   background-color: #fff;
 }
 
+/* admin menubar */
+body.is_admin {
+  padding-top: 58px;
+}
+.admin_top_bar {
+  position: absolute;
+  top: 0;
+}
+
 /* Header Nav & Main Menus */
 body.homepages #homepageNav,
 body.homepages_members #homepageNav {
