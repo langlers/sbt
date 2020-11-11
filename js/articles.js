@@ -30,6 +30,9 @@
 			});
 		};
 	});
+	if ($images.length == 1) {
+		$images.first().addClass('w-100');
+	}
 
 	/* Wrap first sentence & Create Hero title area */
 	var $title = $('.article-container .article-main-title').replaceWith(function () {
