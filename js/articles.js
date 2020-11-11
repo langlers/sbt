@@ -9,7 +9,7 @@
 	$articleBody.removeClass('w-100 mt-5 d-inline-block').addClass('col-lg-6');
 	$articleBody.after($imgCol);
 	$articleBody.find('img').each(function(){
-		$(this).appendTo($imgCol).wrap('<div class="port-item popup-gallery">');
+		$(this).appendTo($imgCol).wrap('<div class="port-item"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
 	});
 	$article.find('.col-lg-6').wrapAll('<div class="row">');
 
