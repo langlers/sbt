@@ -82,6 +82,9 @@ body#content__{}
   font-weight: 800 !important;
 }
 
+.to-top {
+  border: 1px solid #ddd;
+}
 
 /* Filter and search bar styles */
 .filters-button-group {
