@@ -30,7 +30,11 @@ $(document).ready(function() {
     // use value of search field to filter
     var $quicksearch = $('.quicksearch').keyup( debounce( function() {
         qsRegex = new RegExp( $quicksearch.val(), 'gi' );
-        $grid.isotope();
+        $grid.isotope({
+            filter: function() {
+                return qsRegex ? $(this).find('.card-title a.recent-articles-title').attr('title').match( qsRegex ) : true;
+            }
+        });
     }, 200 ) );
 
     // debounce so filtering doesn't happen every millisecond
