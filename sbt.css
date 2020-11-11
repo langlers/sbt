@@ -40,6 +40,15 @@ body.homepages #headerNav,
 body.homepages_members #headerNav {
   display: none;
 }
+
+@media (min-width: 768px) {
+  #headerNav .for-sticky > .container-fluid {
+    width: 80%;
+  }
+}
+
+
+
 body.is_member {}
 body.categories {}
 body.articles {}
