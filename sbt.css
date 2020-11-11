@@ -26,6 +26,14 @@ body.articles {}
 body.store {}
 body.contact {}
 body#content__{}
+/* END Header */
+
+/* Footer Styles */
+#footer-container {
+  background-color: #000;
+}
+/* END Footer */
+
 
 .container-fluid {
   max-width: 100%;
