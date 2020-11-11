@@ -208,6 +208,6 @@
         effect: 'fade'
     });
 
-    
+
 
 })(jQuery);
