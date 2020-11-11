@@ -43,7 +43,7 @@
 	var parts = $firstP.html().split('.');
 	var firstSentence = '<p class="first-sentence">' + parts.shift() + '.</p>';
 	$firstP.html(firstSentence + parts.join('.')).after($title);
-	$('.article-container .article-main-title, .article-body .first-sentence').wrapAll('<div class="hero-box">').prependTo($articleBody);
+	//$title.wrap('<div class="hero-box">').prependTo($articleBody);
 
 
 
