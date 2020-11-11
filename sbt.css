@@ -5,7 +5,7 @@ body {
 /* Header Nav & Main Menus */
 body.homepages #homepageNav,
 body.homepages_members #homepageNav {
-  display: block;
+  display: block !important;
 }
 body.homepages #headerNav,
 body.homepages_members #headerNav {
