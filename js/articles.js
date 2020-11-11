@@ -20,6 +20,7 @@
 			var $grid = $('.img-grid').isotope({
 				itemSelector: '.grid-item',
 				layoutMode: 'masonry',
+				percentPosition: true,
 				masonry: {
 					columnWidth: '.grid-item'
 				}
