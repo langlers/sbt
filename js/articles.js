@@ -25,5 +25,13 @@
 		$grid.isotope();
 	});
 
+	/* Create popup gallery from images */
+	$('.popup-gallery').magnificPopup({
+		type: 'image',
+		gallery: {
+			enabled: true
+		}
+	});
+
 
 })(jQuery);
