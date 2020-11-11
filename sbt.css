@@ -282,6 +282,10 @@ ul.filters-button-group li input {
   color: #939393;
   margin-bottom: 3rem;
 }
+.article-container .img-grid .grid-item.col-md-6 {
+  padding-right: 0;
+  padding-left: 0;
+}
 .article-container .img-grid .grid-item a {
   margin: 5px;
 }
