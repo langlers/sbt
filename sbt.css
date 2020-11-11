@@ -287,5 +287,6 @@ ul.filters-button-group li input {
   padding-left: 0;
 }
 .article-container .img-grid .grid-item a {
+  display: block;
   margin: 5px;
 }
