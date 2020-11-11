@@ -15,7 +15,7 @@ $(document).ready(function() {
         itemSelector: '.card',
         layoutMode: 'fitRows',
         filter: function() {
-            return qsRegex ? $(this).find('.recent-articles-title').text().match( qsRegex ) : true;
+            return qsRegex ? $(this).find('.card-title a.recent-articles-title').attr('title').match( qsRegex ) : true;
         },
         getSortData: {
             title: '.recent-articles-title' // text from querySelector
