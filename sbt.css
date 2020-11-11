@@ -295,6 +295,9 @@ ul.filters-button-group li input {
   padding-right: 0;
   padding-left: 0;
 }
+.article-container .img-grid .grid-item {
+  width: 50%;
+}
 .article-container .img-grid .grid-item a {
   display: block;
   margin: 5px;

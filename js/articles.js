@@ -14,7 +14,7 @@
 	var $images = $articleBody.find('img');
 	var count = $images.length;
 	$images.each(function(){
-		$(this).appendTo($imgCol).wrap('<div class="grid-item col-md-6"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
+		$(this).appendTo($imgCol).wrap('<div class="grid-item"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
 		if (!--count) {
 			/* Set up Isotope Layout for Images */
 			var $grid = $('.img-grid').isotope({
@@ -25,7 +25,7 @@
 					columnWidth: '.grid-item'
 				}
 			});
-			$grid.imagesLoaded(function(){
+			$grid.imagesLoaded().progress( function() {
 				$grid.isotope('layout');
 			});
 		};
