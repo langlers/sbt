@@ -9,7 +9,7 @@
 	$articleBody.removeClass('w-100 mt-5 d-inline-block').addClass('col-lg-6');
 	$articleBody.after($imgCol);
 	$articleBody.find('img').each(function(){
-		$(this).appendTo($imgCol);
+		$(this).appendTo($imgCol).wrap('<div class="port-item popup-gallery">');
 	});
 	$article.find('.col-lg-6').wrapAll('<div class="row">');
 
@@ -18,6 +18,12 @@
 	var parts = $firstP.html().split('.');
 	var firstSentence = '<span class="first-sentence">' + parts.shift() + '.</span>';
 	$firstP.html(firstSentence + parts.join('.'));
+
+	/* Set up Isotope Layout for Images */
+	var $grid = $('.img-grid');
+	$grid.imagesLoaded(function(){
+		$grid.isotope();
+	});
 
 
 })(jQuery);
