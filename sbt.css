@@ -2,6 +2,22 @@ body {
   background-color: #fff;
 }
 
+/* Header Nav & Main Menus */
+body.homepages #homepageNav,
+body.homepages_members #homepageNav {
+  display: block;
+}
+body.homepages #headerNav,
+body.homepages_members #headerNav {
+  display: none;
+}
+body.is_member {}
+body.categories {}
+body.articles {}
+body.store {}
+body.contact {}
+body#content__{}
+
 .container-fluid {
   max-width: 100%;
   width: 100%;
