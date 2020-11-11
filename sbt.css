@@ -274,3 +274,11 @@ ul.filters-button-group li input {
   margin: 0 0 20px;
   text-transform: capitalize;
 }
+.article-container .article-body .first-sentence {
+  display: block;
+  font-family: quicksand;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #939393;
+  margin-bottom: 3rem;
+}
