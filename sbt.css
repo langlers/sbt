@@ -11,10 +11,28 @@ body.is_admin {
   top: 0;
 }
 
+/* Hide default nav */
+#top-container {
+  display: none;
+}
+
 /* Header Nav & Main Menus */
 body.homepages #homepageNav,
 body.homepages_members #homepageNav {
   display: block !important;
+  background-color: #000;
+}
+#homepageNav .menu-box {
+  border-bottom: 1px solid #eee;
+  border-top: none;
+  text-align: center;
+  width: 100%;
+  margin-top: -95px;
+  background-color: #000;
+  position: relative;
+  display: table !important;
+  width: auto;
+  margin: -97px auto 0;
 }
 body.homepages #headerNav,
 body.homepages_members #headerNav {
