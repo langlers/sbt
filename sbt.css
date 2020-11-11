@@ -33,7 +33,7 @@ body.homepages_members #homepageNav {
   width: auto;
   margin: -97px auto 0;
 }
-#homepageNav .navigation li a {
+#homepageNav .navigation > li > a {
   color: #fff;
 }
 body.homepages #headerNav,
