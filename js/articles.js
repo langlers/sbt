@@ -2,11 +2,13 @@
     "use strict";
 
 	var $article = $('body.articles .article-container');
+	var $articleBody = $article.find('.article-body');
 
 	/* Set body to half width and move images to right col. */
 	var $imgCol = $('<div class="img-grid col-lg-6">');
-	$article.find('.article-body').removeClass('w-100').addClass('col-lg-6').insertAfter($imgCol);
-	$article.find('img').each(function(){
+	$articleBody.removeClass('w-100').addClass('col-lg-6');
+	$articleBody.append($imgCol);
+	$articleBody.find('img').each(function(){
 		$(this).appendTo($imgCol);
 	});
 
