@@ -38,11 +38,11 @@
 	$('.article-container > h1.article-main-title').replaceWith(function () {
 		return "<h3 class='article-main-title'>" + $(this).html() + "</h3>";
 	});
-	var $title = $('.article-container > h3.article-main-title');
+	var $title = $('.article-container > h3.article-main-title').prependTo($articleBody).wrap('<div class="hero-box">');
 	var $firstP = $article.find('.article-body p:first');
 	var parts = $firstP.html().split('.');
 	var firstSentence = '<p class="first-sentence">' + parts.shift() + '.</p>';
-	$firstP.html(firstSentence + parts.join('.')).before($title);
+	$firstP.html(firstSentence + parts.join('.')).insertAfter($title);
 	//$title.wrap('<div class="hero-box">').prependTo($articleBody);
 
 
