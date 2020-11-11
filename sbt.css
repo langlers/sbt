@@ -132,6 +132,13 @@ ul.filters-button-group li input {
   -webkit-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
+.card .card-body:hover .recent-article-teaser-body::after,
+.card .card-body:hover .recent-article-teaser-body::before {
+  opacity:1;
+  transform: scale(10);
+  -ms-transform: scale(10);
+  -webkit-transform: scale(10);
+}
 .card .card-body .recent-article-teaser-body::after {
   background: #000 none repeat scroll 0 0;
   border-radius: 200px;
