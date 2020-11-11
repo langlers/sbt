@@ -5,11 +5,11 @@
 	var $articleBody = $article.find('.article-body');
 
 	/* Set body to half width and move images to right col. */
-	var $imgCol = $('<div class="img-grid col-lg-6">');
+	var $imgCol = $('<div class="img-grid">');
 	$articleBody.removeClass('w-100 mt-5 d-inline-block').addClass('col-lg-6');
 	$articleBody.after($imgCol);
 	$articleBody.find('img').each(function(){
-		$(this).appendTo($imgCol).wrap('<div class="port-item"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
+		$(this).appendTo($imgCol).wrap('<div class="grid-item col-md-6"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
 	});
 	$article.find('.col-lg-6').wrapAll('<div class="row">');
 
@@ -20,7 +20,13 @@
 	$firstP.html(firstSentence + parts.join('.'));
 
 	/* Set up Isotope Layout for Images */
-	var $grid = $('.img-grid');
+	var $grid = $('.img-grid').isotope({
+		itemSelector: '.grid-item',
+		layoutMode: 'fitRows',
+		masonry: {
+			columnWidth: '.grid-item'
+		}
+	});
 	$grid.imagesLoaded(function(){
 		$grid.isotope();
 	});
