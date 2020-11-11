@@ -291,6 +291,9 @@ ul.filters-button-group li input {
   color: #939393;
   margin-bottom: 3rem;
 }
+.article-container .hero-box .first-sentence {
+  color: #939393;
+}
 .article-container .img-grid .grid-item.col-md-6 {
   padding-right: 0;
   padding-left: 0;

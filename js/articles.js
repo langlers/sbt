@@ -35,14 +35,15 @@
 	}
 
 	/* Wrap first sentence & Create Hero title area */
-	var $title = $('.article-container > h1.article-main-title').replaceWith(function () {
+	$('.article-container > h1.article-main-title').replaceWith(function () {
 		return "<h3 class='article-main-title'>" + $(this).html() + "</h3>";
-	});;
+	});
+	var $title = $('.article-container > h3.article-main-title');
 	var $firstP = $article.find('.article-body p:first');
 	var parts = $firstP.html().split('.');
 	var firstSentence = '<p class="first-sentence">' + parts.shift() + '.</p>';
 	$firstP.html(firstSentence + parts.join('.')).after($title);
-	$('.article-container .article-main-title, .article-body .first-sentence').wrapAll('<div class="hero-box">');
+	$('.article-container .article-main-title, .article-body .first-sentence').wrapAll('<div class="hero-box">').prependTo($articleBody);
 
 
 
