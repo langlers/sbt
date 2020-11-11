@@ -195,6 +195,7 @@ ul.filters-button-group li input {
   line-height: 1;
   margin-bottom: 40px;
   text-transform: uppercase;
+  color: #fff;
 }
 .card .card-footer {
   z-index: 2;
