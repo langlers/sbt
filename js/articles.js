@@ -35,7 +35,7 @@
 	}
 
 	/* Wrap first sentence & Create Hero title area */
-	var $title = $('.article-container .article-main-title').replaceWith(function () {
+	var $title = $('.article-container > h1.article-main-title').replaceWith(function () {
 		return "<h3 class='article-main-title'>" + $(this).html() + "</h3>";
 	});;
 	var $firstP = $article.find('.article-body p:first');
