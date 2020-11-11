@@ -82,12 +82,11 @@ $(document).ready(function() {
         var title = $cardTitle.text();
         var $cardBody = $(this).find('.hide_images_in_container');
         $img.remove();
-        $cardTitle.find('a').text('');
         $(this).addClass('col-md-4');
-
         $cardBody.prepend('<h3>' + title + '</h3>');
         $(this).find('.card-footer').appendTo($cardBody);
         $cardTitle.css('background-image', " url('" + imgSrc + "') ");
+        $cardTitle.find('a').text('');
         $grid.isotope('layout');
     });
 

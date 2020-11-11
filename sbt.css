@@ -73,6 +73,17 @@ ul.filters-button-group li input {
   position: relative;
   margin: 5px !important;
 }
+.card .card-body:hover .hide_images_in_container {
+  margin: 0 30px;
+  position: relative;
+  top: 50%;
+  opacity:1;
+  transform: translateY(-50%) scale(1);
+  -ms-transform: translateY(-50%) scale(1);
+  -webkit-transform: translateY(-50%) scale(1);
+  z-index: 1;
+}
+
 .card .card-body .recent-articles-image-container {
   display: block !important;
   position: relative !important;
