@@ -22,7 +22,9 @@
 			if ( ($this.width() > $this.height()) || $this.hasClass('grid-item--width2') ) {
 				horiz = 'grid-item--width2 '; /* double width of horiz images */
 			}
-			$(this).appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
+			var imgTitle = $this.parent().siblings('.item-title').text();
+			$this.attr('title', imgTitle);
+			$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery" href="' + $this.attr('src') + '">');
 			if (!--count) {
 				/* Set up Isotope Layout for Images */
 				var $grid = $('.img-grid').isotope({
