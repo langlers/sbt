@@ -18,7 +18,7 @@
 		var count = $images.length;
 		$images.each(function(){
 			var $this = $(this);
-			var imgClasses = $this.attr('class');
+			var imgClasses = $this.attr('class').split(/\s+/);;
 			console.log('imgClasses');
 			var horiz = '';
 			if ($this.width() > $this.height()) {
