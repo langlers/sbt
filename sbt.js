@@ -10,6 +10,8 @@ $(document).ready(function() {
     // quick search regex
     var qsRegex;
 
+    $('body').fitVids();
+
     // init Isotope
     var $grid = $('.card-deck').isotope({
         itemSelector: '.card',
