@@ -17,7 +17,7 @@
 		var $images = $articleBody.find('img');
 		var count = $images.length;
 		$images.each(function(){
-			$this = $(this);
+			var $this = $(this);
 			console.log('imgClasses');
 			var horiz = '';
 			if ( ($this.width() > $this.height()) || $this.hasClass('grid-item--width2') ) {
