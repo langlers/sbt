@@ -19,6 +19,7 @@
 		$images.each(function(){
 			var $this = $(this);
 			var imgClasses = $this.attr('class');
+			console.log('imgClasses');
 			var horiz = '';
 			if ($this.width() > $this.height()) {
 				horiz = 'grid-item--width2 '; /* double width of horiz images */
