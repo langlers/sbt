@@ -318,6 +318,9 @@ ul.filters-button-group.search-only li input.quicksearch {
   .article-container .img-grid .grid-item {
     width: 47%;
   }
+  .article-container .img-grid .grid-item.grid-item--width2 {
+    width: 94%;
+  }
   .article-container .img-grid .grid-item.full-width {
     width: 80%;
   }
