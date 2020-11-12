@@ -18,7 +18,6 @@
 		var count = $images.length;
 		$images.each(function(){
 			var $this = $(this);
-			console.log('imgClasses');
 			var horiz = '';
 			if ( ($this.width() > $this.height()) || $this.hasClass('grid-item--width2') ) {
 				horiz = 'grid-item--width2 '; /* double width of horiz images */
@@ -68,13 +67,20 @@
 
 		/* isotope filtering on see -> our culture -> collections */
 		// init Isotope
-		var $collectionGrid = $('.collection-grid').isotope({
+		var $colGrid = $('.collection-grid').isotope({
 			itemSelector: '.collection-section',
 			layoutMode: 'vertical',
 		});
 		// layout Isotope after each image loads
-		$collectionGrid.imagesLoaded().progress( function() {
-			$collectionGrid.isotope('layout');
+		$colGrid.imagesLoaded().progress( function() {
+			$colGrid.isotope('layout');
+		});
+		$('.filters-button-group').on( 'click', '.button', function(e) {
+			e.preventDefault();
+			var filterValue = $(this).attr('data-filter');
+			$colGrid.isotope({ filter: filterValue });
+			$(".filters-button-group a").removeClass("active");
+			$(this).addClass("active");
 		});
 	}
 
