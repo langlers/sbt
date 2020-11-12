@@ -326,6 +326,9 @@ ul.filters-button-group.search-only li input.quicksearch {
   display: block;
   margin: 5px;
 }
+.content-box-title.collection-title {
+  font-size: 2.5rem;
+}
 .content-box-title.no-icon {
   padding-left: 0;
 }
