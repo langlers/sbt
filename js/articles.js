@@ -61,7 +61,11 @@
 			type: 'image',
 			gallery: {
 				enabled: true
-			}
+			},
+			titleSrc: alt
+			/*titleSrc: function(item) {
+				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+			}*/
 		});
 
 
