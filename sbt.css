@@ -87,6 +87,11 @@ body#content__{}
   margin-top: -50px;
 }
 
+.justify-content-center .content-box-title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .font-weight-bold {
   font-weight: 800 !important;
 }
@@ -110,6 +115,9 @@ ul.filters-button-group li input {
   letter-spacing: 1px;
   padding: 5px 40px;
   border-radius: 0;
+}
+ul.filters-button-group.search-only li input.quicksearch {
+  min-width: 30rem;
 }
 
 
