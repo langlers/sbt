@@ -302,6 +302,9 @@ ul.filters-button-group li input {
   .article-container .img-grid .grid-item {
     width: 47%;
   }
+  .article-container .img-grid .grid-item.full-width {
+    width: 80%;
+  }
 }
 .article-container .img-grid .grid-item a {
   display: block;

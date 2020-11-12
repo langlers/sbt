@@ -31,7 +31,7 @@
 		};
 	});
 	if ($images.length == 1) {
-		$images.first().addClass('w-100');
+		$images.first().closest('.grid-item').addClass('full-width');
 	}
 
 	/* Wrap first sentence & Create Hero title area */
