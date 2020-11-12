@@ -75,6 +75,10 @@
 		$colGrid.imagesLoaded().progress( function() {
 			$colGrid.isotope('layout');
 		});
+		// layout Isotope after collapse
+		$('.collapse').on('hidden.bs.collapse shown.bs.collapse', function () {
+			$colGrid.isotope('layout');
+		})
 		$('.collection-filters-button-group').on( 'click', '.button', function(e) {
 			e.preventDefault();
 			var filterValue = $(this).attr('data-filter');
