@@ -17,14 +17,13 @@
 		var $images = $articleBody.find('img');
 		var count = $images.length;
 		$images.each(function(){
-			var $this = $(this);
-			var imgClasses = $this.attr('class').split(/\s+/);;
+			$this = $(this);
 			console.log('imgClasses');
 			var horiz = '';
-			if ($this.width() > $this.height()) {
+			if ( ($this.width() > $this.height()) || $this.hasClass('grid-item--width2') ) {
 				horiz = 'grid-item--width2 '; /* double width of horiz images */
 			}
-			$(this).appendTo($imgCol).wrap('<div class="grid-item ' + horiz + imgClasses + '"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
+			$(this).appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
 			if (!--count) {
 				/* Set up Isotope Layout for Images */
 				var $grid = $('.img-grid').isotope({
