@@ -40,7 +40,10 @@ body.homepages #headerNav,
 body.homepages_members #headerNav {
   display: none;
 }
-
+#headerNav .navigation li.sbt-secondary a {
+  text-transform: none;
+  font-weight: normal;
+}
 @media (min-width: 768px) {
   #headerNav .for-sticky > .container-fluid {
     width: 80%;
