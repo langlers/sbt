@@ -342,3 +342,6 @@ ul.filters-button-group.search-only li input.quicksearch {
 .port-filter.collection-filters-button-group a.button {
   padding: 5px 30px;
 }
+.collection-item .item-more {
+  margin-top: 3rem;
+}
