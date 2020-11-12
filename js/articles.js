@@ -23,7 +23,7 @@
 			if ($this.width() > $this.height()) {
 				horiz = 'grid-item--width2 '; /* double width of horiz images */
 			}
-			$(this).appendTo($imgCol).wrap('<div class="grid-item ' + horiz + imgClasses '"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
+			$(this).appendTo($imgCol).wrap('<div class="grid-item ' + horiz + imgClasses + '"><a class="popup-gallery" href="' + $(this).attr('src') + '">');
 			if (!--count) {
 				/* Set up Isotope Layout for Images */
 				var $grid = $('.img-grid').isotope({
@@ -63,6 +63,18 @@
 			gallery: {
 				enabled: true
 			}
+		});
+
+
+		/* isotope filtering on see -> our culture -> collections */
+		// init Isotope
+		var $collectionGrid = $('.collection-grid').isotope({
+			itemSelector: '.collection-section',
+			layoutMode: 'fitColumns',
+		});
+		// layout Isotope after each image loads
+		$collectionGrid.imagesLoaded().progress( function() {
+			$collectionGrid.isotope('layout');
 		});
 	}
 
