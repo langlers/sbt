@@ -335,9 +335,9 @@ ul.filters-button-group.search-only li input.quicksearch {
 .content-box-title.no-icon {
   padding-left: 0;
 }
-.port-filter.collection {
+.port-filter.collection-filters-button-group {
   text-align: left;
 }
-.port-filter.collection a.button {
+.port-filter.collection-filters-button-group a.button {
   padding: 5px 30px;
 }

@@ -75,11 +75,11 @@
 		$colGrid.imagesLoaded().progress( function() {
 			$colGrid.isotope('layout');
 		});
-		$('.filters-button-group').on( 'click', '.button', function(e) {
+		$('.collection-filters-button-group').on( 'click', '.button', function(e) {
 			e.preventDefault();
 			var filterValue = $(this).attr('data-filter');
 			$colGrid.isotope({ filter: filterValue });
-			$(".filters-button-group a").removeClass("active");
+			$(".collection-filters-button-group a").removeClass("active");
 			$(this).addClass("active");
 		});
 	}
