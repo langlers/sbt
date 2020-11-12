@@ -8,7 +8,7 @@
 		var $articleBody = $article.find('.article-body');
 
 		/* Set body to half width and move images to right col. */
-		var $imgCol = $('<div class="img-grid col-lg-6">');
+		var $imgCol = $('<div class="img-grid col-lg-6">').append('<div class="grid-sizer">');
 		$articleBody.after($imgCol);
 		$articleBody.removeClass('w-100 mt-5 d-inline-block').addClass('col-lg-6');
 		$article.find('.col-lg-6').wrapAll('<div class="row">');

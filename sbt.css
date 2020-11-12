@@ -315,7 +315,8 @@ ul.filters-button-group.search-only li input.quicksearch {
   padding-left: 0;
 }
 @media (min-width: 768px) {
-  .article-container .img-grid .grid-item {
+  .article-container .img-grid .grid-item,
+  .article-container .img-grid .grid-sizer {
     width: 47%;
   }
   .article-container .img-grid .grid-item.grid-item--width2 {
