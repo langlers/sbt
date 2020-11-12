@@ -70,7 +70,7 @@
 		// init Isotope
 		var $collectionGrid = $('.collection-grid').isotope({
 			itemSelector: '.collection-section',
-			layoutMode: 'fitColumns',
+			layoutMode: 'vertical',
 		});
 		// layout Isotope after each image loads
 		$collectionGrid.imagesLoaded().progress( function() {
