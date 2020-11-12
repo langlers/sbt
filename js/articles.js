@@ -42,7 +42,8 @@
 	var $firstP = $article.find('.article-body p:first');
 	var parts = $firstP.html().split('.');
 	var firstSentence = '<p class="first-sentence">' + parts.shift() + '.</p>';
-	$firstP.html(firstSentence + parts.join('.')).insertAfter($title);
+	$firstP.html(firstSentence + parts.join('.'));
+	$articleBody.find('.first-sentence').insertAfter($title);
 	//$title.wrap('<div class="hero-box">').prependTo($articleBody);
 
 
