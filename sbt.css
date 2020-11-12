@@ -40,9 +40,14 @@ body.homepages #headerNav,
 body.homepages_members #headerNav {
   display: none;
 }
+#headerNav .navigation li a {
+  opacity: 0.6;
+}
 #headerNav .navigation li.sbt-secondary a {
-  text-transform: none;
+  text-transform: lowercase;
   font-weight: normal;
+  padding-right: 50%;
+  opacity: 0.4;
 }
 @media (min-width: 768px) {
   #headerNav .for-sticky > .container-fluid {
