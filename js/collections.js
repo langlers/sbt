@@ -23,7 +23,7 @@
 			$images.each(function(){
 				var $this = $(this);
 				var horiz = '';
-				if ( ($this.width() > $this.height()) || $this.hasClass('grid-item--width2') ) {
+				if ( ($this.width() > ( 1.5 * $this.height() ) ) || $this.hasClass('grid-item--width2') ) {
 					horiz = 'grid-item--width2 '; /* double width of horiz images */
 				}
 				var imgTitle = $this.parent().siblings('.item-title').text();
