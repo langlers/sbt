@@ -15,7 +15,7 @@
 			var $imgCol = $('<div class="img-grid col-lg-6">').append('<div class="grid-sizer">');
 			$this.after($imgCol);
 			$this.removeClass('w-100 mt-5 d-inline-block').addClass('col-lg-6');
-			$article.find('.col-lg-6').wrapAll('<div class="row">');
+			$this.add($this.next()).wrapAll('<div class="row">');
 
 			/* iterate over images, then run isotope */
 			var $images = $this.find('img, .video');
