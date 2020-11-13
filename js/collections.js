@@ -10,14 +10,15 @@
 		var $collectionSection = $collection.find('.collection-section');
 
 		$collectionSection.each(function(){
+			var $this = $(this);
 			/* Set each section to half width and move images to right col. */
 			var $imgCol = $('<div class="img-grid col-lg-6">').append('<div class="grid-sizer">');
-			$collectionSection.after($imgCol);
-			$collectionSection.removeClass('w-100 mt-5 d-inline-block').addClass('col-lg-6');
+			$this.after($imgCol);
+			$this.removeClass('w-100 mt-5 d-inline-block').addClass('col-lg-6');
 			$article.find('.col-lg-6').wrapAll('<div class="row">');
 
 			/* iterate over images, then run isotope */
-			var $images = $articleBody.find('img');
+			var $images = $this.find('img');
 			var count = $images.length;
 			$images.each(function(){
 				var $this = $(this);
@@ -54,7 +55,7 @@
 		$('.article-container > h1.article-main-title').replaceWith(function () {
 			return "<h3 class='article-main-title'>" + $(this).html() + "</h3>";
 		});
-		var $title = $('.article-container > h3.article-main-title').prependTo($articleBody).wrap('<div class="hero-box">');
+		var $title = $('.article-container > h3.article-main-title').prependTo($articleBody).wrap('<div class="hero-box col-lg-6">');
 		var $firstP = $article.find('.article-body p:first');
 		var parts = $firstP.html().split('.');
 		var firstSentence = '<p class="first-sentence">' + parts.shift() + '.</p>';
@@ -70,7 +71,7 @@
 			gallery: {
 				enabled: true
 			},
-			titleSrc: 'alt'
+			titleSrc: 'title'
 			/*titleSrc: function(item) {
 				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
 			}*/
