@@ -95,7 +95,7 @@
 		});
 		// layout Isotope after collapse
 		$('.collapse').on('hidden.bs.collapse shown.bs.collapse', function () {
-			$colGrid.isotope('layout');
+			$colGrid.delay(3500).isotope('layout');
 		})
 		$('.collection-filters-button-group').on( 'click', '.button', function(e) {
 			e.preventDefault();
