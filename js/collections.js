@@ -68,6 +68,12 @@
 
 		/* Create popup gallery from images */
 		$('.popup-gallery').magnificPopup({
+			items: [
+				{
+					src: '.video', // Dynamically created element
+					type: 'inline'
+				}
+			],
 			type: 'image',
 			gallery: {
 				enabled: true
