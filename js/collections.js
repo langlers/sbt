@@ -29,8 +29,9 @@
 				var imgTitle = $this.parent().siblings('.item-title').text();
 				$this.attr('title', imgTitle);
 				$this.addClass('shadow'); /* add a drop shadow to images */
-				if ($this.hasClass('video-noimage')) {
-					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '">');
+				if ($this.hasClass('video')) {
+					$this.attr('id', 'videoPopup' + count);
+					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery" href="#videoPopup' + count + '">');
 				} else {
 					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery" href="' + $this.attr('src') + '">');
 				}
