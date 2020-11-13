@@ -346,3 +346,18 @@ ul.filters-button-group.search-only li input.quicksearch {
 .collection-item .item-more {
   margin-top: 3rem;
 }
+
+/* Forms */
+.form-control, .form-control.rounded, input[type="text"], input[type="password"], textarea {
+  border-radius: 0;
+  height: auto;
+  font-size: 0.9rem;
+
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  color: #888;
+  line-height: inherit;
+  padding: 8px 13px;
+  width: 100%;
+  background: #fff;
+}
