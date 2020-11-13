@@ -31,9 +31,9 @@
 				$this.addClass('shadow'); /* add a drop shadow to images */
 				if ($this.hasClass('video')) {
 					$this.attr('id', 'videoPopup' + count);
-					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery" href="#videoPopup' + count + '">');
+					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery mfp-inline" href="#videoPopup' + count + '">');
 				} else {
-					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery" href="' + $this.attr('src') + '">');
+					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery mfp-image" href="' + $this.attr('src') + '">');
 				}
 				if (!--count) {
 					/* Set up Isotope Layout for Images */
@@ -74,7 +74,6 @@
 
 		/* Create popup gallery from images */
 		$('.popup-gallery').magnificPopup({
-			type: 'inline',
 			gallery: {
 				enabled: true
 			},
