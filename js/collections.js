@@ -74,7 +74,7 @@
 
 		/* Create popup gallery from images */
 		$('.popup-gallery').magnificPopup({
-			type: 'image',
+			type: 'inline',
 			gallery: {
 				enabled: true
 			},
