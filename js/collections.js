@@ -77,10 +77,9 @@
 			gallery: {
 				enabled: true
 			},
-			titleSrc: 'title'
-			/*titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}*/
+			image: {
+				titleSrc: 'title'
+			}
 		});
 
 
