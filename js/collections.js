@@ -46,7 +46,7 @@
 						}
 					});
 					$grid.imagesLoaded().progress( function() {
-						$grid.isotope('layout');
+						$grid.delay(500).isotope('layout');
 					});
 				};
 			});
