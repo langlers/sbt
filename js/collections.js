@@ -73,12 +73,6 @@
 
 		/* Create popup gallery from images */
 		$('.popup-gallery').magnificPopup({
-			items: [
-				{
-					src: '.youtube-popup',
-					type: 'iframe'
-				}
-			],
 			type: 'image',
 			gallery: {
 				enabled: true
