@@ -71,8 +71,8 @@
 		$('.popup-gallery').magnificPopup({
 			items: [
 				{
-					src: '.video', // Dynamically created element
-					type: 'inline'
+					src: '.youtube-popup',
+					type: 'iframe'
 				}
 			],
 			type: 'image',
