@@ -5,7 +5,7 @@
 	var $collection = $article.find('.sbt-collection-container');
 
 	/* only run on see - our culture - collection pages */
-	if ($collection.length) {
+	if ( $collection.length ) {
 		//var $articleBody = $article.find('.article-body');
 		var $collectionSection = $collection.find('.collection-section');
 
