@@ -14,10 +14,18 @@
 <script src="https://langlers.github.io/sbt/js/jquery.magnific-popup.min.js"></script>
 <script src="https://langlers.github.io/sbt/js/jquery.sticky.js"></script>
 <script src="https://langlers.github.io/sbt/js/jquery.fitvids.js"></script>
-<script src="https://langlers.github.io/sbt/js/LazyTube.js"></script>
 <script src="https://langlers.github.io/sbt/js/slick.min.js"></script>
 <script src="https://langlers.github.io/sbt/js/ticker.js"></script>
 <script src="https://langlers.github.io/sbt/js/script.js"></script>
 <script src="https://langlers.github.io/sbt/js/articles.js"></script>
 <script src="https://langlers.github.io/sbt/js/collections.js"></script>
 <script type="text/javascript" charset="UTF-8" src="https://langlers.github.io/sbt/sbt.js"></script>
+<script type="module">
+    import LazyTube from 'https://langlers.github.io/sbt/js/LazyTube.js';
+    (function() {
+        'use strict';
+        document.addEventListener('DOMContentLoaded', () => {
+            LazyTube.init();
+        });
+    })();
+</script>

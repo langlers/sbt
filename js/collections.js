@@ -47,11 +47,6 @@
 					$grid.imagesLoaded().progress( function() {
 						$grid.isotope('layout');
 					});
-					/* Set up LazyTube */
-					import LazyTube from 'https://langlers.github.io/sbt/js/LazyTube.js';
-					document.addEventListener('DOMContentLoaded', () => {
-						LazyTube.init();
-					});
 				};
 			});
 			if ($images.length == 1) {
