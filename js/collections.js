@@ -7,7 +7,7 @@
 	/* only run on see - our culture - collection pages */
 	if ( $collection.length ) {
 		//var $articleBody = $article.find('.article-body');
-		var $collectionSection = $collection.find('.collection-section');
+		var $collectionSection = $collection.find('.collection-section-inner');
 
 		$collectionSection.each(function(){
 			var $this = $(this);
