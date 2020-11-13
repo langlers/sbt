@@ -3,8 +3,8 @@
 
 	var $article = $('body.articles .article-container');
 
-	/* only run this code on article pages */
-	if ($article.length) {
+	/* only run this code on article pages excluding collections */
+	if ($article.length && !$article.find('.sbt-collection-container').length ) {
 		var $articleBody = $article.find('.article-body');
 
 		/* Set body to half width and move images to right col. */
@@ -70,28 +70,6 @@
 			}*/
 		});
 
-
-		/* isotope filtering on see -> our culture -> collections */
-		// init Isotope
-		var $colGrid = $('.collection-grid').isotope({
-			itemSelector: '.collection-section',
-			layoutMode: 'vertical',
-		});
-		// layout Isotope after each image loads
-		$colGrid.imagesLoaded().progress( function() {
-			$colGrid.isotope('layout');
-		});
-		// layout Isotope after collapse
-		$('.collapse').on('hidden.bs.collapse shown.bs.collapse', function () {
-			$colGrid.isotope('layout');
-		})
-		$('.collection-filters-button-group').on( 'click', '.button', function(e) {
-			e.preventDefault();
-			var filterValue = $(this).attr('data-filter');
-			$colGrid.isotope({ filter: filterValue });
-			$(".collection-filters-button-group a").removeClass("active");
-			$(this).addClass("active");
-		});
 	}
 
 })(jQuery);
