@@ -18,7 +18,7 @@
 			$article.find('.col-lg-6').wrapAll('<div class="row">');
 
 			/* iterate over images, then run isotope */
-			var $images = $this.find('img');
+			var $images = $this.find('img, .video');
 			var count = $images.length;
 			$images.each(function(){
 				var $this = $(this);
