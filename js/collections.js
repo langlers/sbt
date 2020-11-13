@@ -55,7 +55,7 @@
 		$('.article-container > h1.article-main-title').replaceWith(function () {
 			return "<h3 class='article-main-title'>" + $(this).html() + "</h3>";
 		});
-		var $title = $('.article-container > h3.article-main-title').prependTo($articleBody).wrap('<div class="hero-box col-lg-6">');
+		var $title = $('.article-container > h3.article-main-title').prependTo($article.find('.article-body')).wrap('<div class="hero-box col-lg-6">');
 		var $firstP = $article.find('.article-body p:first');
 		var parts = $firstP.html().split('.');
 		var firstSentence = '<p class="first-sentence">' + parts.shift() + '.</p>';
