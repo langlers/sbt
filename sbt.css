@@ -318,6 +318,7 @@ ul.filters-button-group.search-only li input.quicksearch {
   .article-container .img-grid .grid-item,
   .article-container .img-grid .grid-sizer {
     width: 47%;
+    max-height: 100vh;
   }
   .article-container .img-grid .grid-item.grid-item--width2 {
     width: 94%;

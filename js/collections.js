@@ -28,6 +28,7 @@
 				}
 				var imgTitle = $this.parent().siblings('.item-title').text();
 				$this.attr('title', imgTitle);
+				$this.addClass('shadow'); /* add a drop shadow to images */
 				$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery" href="' + $this.attr('src') + '">');
 				if (!--count) {
 					/* Set up Isotope Layout for Images */
