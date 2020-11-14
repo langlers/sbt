@@ -46,7 +46,7 @@
 						}
 					});
 					$grid.imagesLoaded().progress( function() {
-						$grid.delay(3000).isotope('layout');
+						$grid.isotope('layout');
 					});
 				};
 			});
@@ -95,7 +95,7 @@
 		});
 		// layout Isotope after collapse
 		$('.collapse').on('hidden.bs.collapse shown.bs.collapse', function () {
-			$colGrid.delay(3500).isotope('layout');
+			$colGrid.isotope('layout');
 		})
 		$('.collection-filters-button-group').on( 'click', '.button', function(e) {
 			e.preventDefault();
