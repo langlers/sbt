@@ -103,6 +103,17 @@ body#content__{}
   border: 4px solid #ddd;
   padding: 4rem 2rem 1rem;
   margin-top: -50px;
+  text-align: center;
+}
+.sbt-box .content-box-title {
+  padding-left: 0;
+}
+.sbt-box .content-box-title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+.sbt-box .content-box-title i.fa {
+  display: none;
 }
 
 .justify-content-center .content-box-title::after {
