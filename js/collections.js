@@ -31,7 +31,7 @@
 				$this.addClass('shadow'); /* add a drop shadow to images */
 				if ($this.hasClass('video')) {
 					$this.attr('id', 'videoPopup' + count);
-					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery mfp-inline" href="#videoPopup' + count + '">');
+					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="xx-popup-gallery mfp-inline" href="#videoPopup' + count + '">');
 				} else {
 					$this.appendTo($imgCol).wrap('<div class="grid-item ' + horiz + '"><a class="popup-gallery mfp-image" href="' + $this.attr('src') + '">');
 				}
@@ -62,7 +62,7 @@
 		$('.article-container > h1.article-main-title').replaceWith(function () {
 			return "<h3 class='article-main-title'>" + $(this).html() + "</h3>";
 		});
-		var $title = $('.article-container > h3.article-main-title').prependTo($articleBody).wrap('<div class="hero-box col-lg-6">');
+		var $title = $('.article-container > h3.article-main-title').prependTo($articleBody).wrap('<div class="row"><div class="hero-box col-lg-6">');
 		var $firstP = $article.find('.article-body p:first');
 		var parts = $firstP.html().split('.');
 		var firstSentence = '<p class="first-sentence">' + parts.shift() + '.</p>';
