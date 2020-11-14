@@ -69,6 +69,14 @@ body#content__{}
 #footer-container {
   background-color: #000;
 }
+.footer p {
+  color: #939393;
+}
+.footer .footer-wigdet p {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 14px;
+}
 /* END Footer */
 
 
@@ -367,3 +375,4 @@ ul.filters-button-group.search-only li input.quicksearch {
   width: 100%;
   background: #fff;
 }
+
