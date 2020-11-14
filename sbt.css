@@ -314,6 +314,12 @@ ul.filters-button-group.search-only li input.quicksearch {
   padding-right: 0;
   padding-left: 0;
 }
+.article-container .img-grid img {
+  max-height: 100vh;
+}
+.article-container .img-grid .grid-sizer {
+  max-height: 100vh;
+}
 @media (min-width: 768px) {
   .article-container .img-grid .grid-item,
   .article-container .img-grid .grid-sizer {
