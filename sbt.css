@@ -336,8 +336,7 @@ ul.filters-button-group.search-only li input.quicksearch {
   padding-left: 0;
 }
 .article-container .img-grid .grid-item {
-  /*max-height: 100vh;*/
-  max-height: 400px;
+  max-height: 100vh;
   float: left;
 }
 .article-container .img-grid .grid-sizer {
