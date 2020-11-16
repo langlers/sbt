@@ -338,6 +338,7 @@ ul.filters-button-group.search-only li input.quicksearch {
 .article-container .img-grid .grid-item {
   /*max-height: 100vh;*/
   max-height: 400px;
+  float: left;
 }
 .article-container .img-grid .grid-sizer {
   max-height: 100vh;
