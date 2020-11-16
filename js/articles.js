@@ -32,7 +32,7 @@
 					layoutMode: 'masonry',
 					percentPosition: true,
 					masonry: {
-						columnWidth: '.grid-item'
+						columnWidth: '.grid-sizer'
 					}
 				});
 				$grid.imagesLoaded().progress( function() {
