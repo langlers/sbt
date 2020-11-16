@@ -12,6 +12,51 @@ $(document).ready(function() {
 
     $('body').fitVids();
 
+    //move to hash after loading
+    if (window.location.hash) {
+        var menuheigt = $(".for-sticky").height();
+        $('html, body').stop().animate({
+            scrollTop: $(window.location.hash).offset().top - menuheigt
+        }, 300, 'linear');
+    }
+
+    //create menu for tablet/mobile
+    $(".menu-box .navigation").clone(false).find("ul,li").removeAttr("id").remove(".sub-menu").appendTo($(".mobile-menu"));
+    //remove empty href
+    $(".mobile-menu a[href='#']").parent().remove();
+    $(".mobile-menu .sub-menu").remove();
+    //remove empty ul on mobile menu
+    $('.mobile-menu ul').not(':has(li)').remove();
+    $('.mobile-menu').on('show.bs.collapse', function() {
+        $('body').on('click', function() {
+            $('.mobile-menu').collapse('hide');
+        })
+    })
+
+    //toggle menu
+    $('.menu-btn').on('click', function() {
+        $('.mobile-menu').collapse({
+            toggle: false
+        });
+    })
+
+
+    //menu for tablet/mobile,slider button, about button scrolling
+    $('.mobile-menu a,.sl-btn,.ab-btn').on('click', function() {
+        var $anchor = $(this);
+        var menuheigt = $(".for-sticky").height();
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - menuheigt
+        }, 800, 'linear');
+    });
+
+
+
+    //sticky navigation
+    $(".for-sticky").sticky({
+        topSpacing: 0
+    });
+
     // init Isotope
     var $grid = $('.card-deck').isotope({
         itemSelector: '.card',
