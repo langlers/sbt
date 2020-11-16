@@ -29,7 +29,7 @@
 				/* Set up Isotope Layout for Images */
 				var $grid = $('.img-grid').isotope({
 					itemSelector: '.grid-item',
-					layoutMode: 'masonry',
+					layoutMode: 'fitRow',
 					percentPosition: true,
 					masonry: {
 						columnWidth: '.grid-sizer'
