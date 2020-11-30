@@ -1,6 +1,64 @@
-body {
-  background-color: #fff;
+body {}
+
+/*
+ *
+ *Color Fixes
+ *
+ */
+
+/* Backgrounds */
+body,
+.list-group-item {
+  background-color: #000;
 }
+/* Typography */
+h1, h2, h3, h4, h5, h6,
+#body-content .article-main-title {
+  color: #fff;
+}
+p {
+  color: #fff;
+}
+a {
+  color: #999;
+}
+.text-muted {
+  color: #ddd !important;
+}
+.navigation li a {
+  color: #fff;
+}
+.menu-box ul li ul {
+  background: #444;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+.port-filter a {
+  background: #000;
+}
+.port-filter a.active {
+  color: #000;
+  background: #fff;
+}
+.port-filter a:hover {
+  color: #000;
+  background: #fff;
+}
+.footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer p {
+  color: #eee;
+}
+
+
+
+/*
+ *
+ * Section Styles
+ *
+ */
 
 /* admin menubar */
 body.is_admin {
