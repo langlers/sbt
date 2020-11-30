@@ -22,6 +22,9 @@ p {
 a {
   color: #999;
 }
+a:hover {
+  color: #fff;
+}
 .text-muted {
   color: #ddd !important;
 }
@@ -31,8 +34,17 @@ a {
 .menu-box ul li ul {
   background: #444;
 }
+.is-sticky .for-sticky {
+  background: #111 none repeat scroll 0 0;
+}
+.clean-header .is-sticky .for-sticky {
+  box-shadow: 0 0 5px 0 #444;
+}
 .breadcrumb-item + .breadcrumb-item::before {
   color: #fff;
+}
+.black-btn {
+  border: 1px solid #fff;
 }
 .port-filter a {
   background: #000;
@@ -43,6 +55,8 @@ a {
 }
 .port-filter a:hover {
   color: #000;
+}
+.port-filter a::after {
   background: #fff;
 }
 .footer a {
