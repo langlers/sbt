@@ -368,6 +368,9 @@ ul.filters-button-group.search-only li input.quicksearch {
 }
 .card .card-body .recent-article-teaser-body .hide_images_in_container {
   opacity:1;
+  transform: translateY(-50%) scale(1,1);
+  -ms-transform: translateY(-50%) scale(1,1);
+  -webkit-transform: translateY(-50%) scale(1,1);
 }
 .card .card-body .recent-article-teaser-body .hide_images_in_container h3 {
   color: #fff;
