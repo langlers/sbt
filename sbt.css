@@ -104,6 +104,12 @@ body.is_admin {
 }
 
 /* Header Nav & Main Menus */
+.header.home-section .logo {
+  max-width: 90%;
+}
+.header.home-section .logo img.logo1 {
+  max-width: 1024px;
+}
 body.homepages #homepageNav,
 body.homepages_members #homepageNav {
   display: block !important;
@@ -118,10 +124,12 @@ body.homepages_members #homepageNav {
   position: relative;
   display: table !important;
   width: auto;
-  margin: -97px auto 0;
+  xx-margin: -113px auto 0;
+  margin: -7rem auto 0;
 }
 #homepageNav .navigation > li > a {
   color: #fff;
+  font-size: 2rem;
 }
 body.homepages #headerNav,
 body.homepages_members #headerNav {
