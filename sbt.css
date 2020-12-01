@@ -19,15 +19,15 @@ h1, h2, h3, h4, h5, h6,
 #body-content .article-main-title,
 .category-main-title,
 .main-section.container_for_general_settigns_formatting h5,
-.main-section.container_for_general_settigns_formatting .h5
+.main-section.container_for_general_settigns_formatting .h5,
 .main-section.container_for_general_settigns_formatting h4,
-.main-section.container_for_general_settigns_formatting .h4
+.main-section.container_for_general_settigns_formatting .h4,
 .main-section.container_for_general_settigns_formatting h3,
 .main-section.container_for_general_settigns_formatting .h3,
 .main-section.container_for_general_settigns_formatting h2,
 .main-section.container_for_general_settigns_formatting .h2,
 .main-section.container_for_general_settigns_formatting h1,
-.main-section.container_for_general_settigns_formatting .h1{
+.main-section.container_for_general_settigns_formatting .h1 {
   color: #fff;
 }
 p,
