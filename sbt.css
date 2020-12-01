@@ -467,6 +467,9 @@ ul.filters-button-group.search-only li input.quicksearch {
   .article-container .img-grid .grid-item.full-width {
     width: 80%;
   }
+  .content.blog-wrapper {
+    width: 80%;
+  }
 }
 .article-container .img-grid .grid-item a {
   display: block;
