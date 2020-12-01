@@ -13,7 +13,8 @@ body,
 }
 /* Typography */
 h1, h2, h3, h4, h5, h6,
-#body-content .article-main-title {
+#body-content .article-main-title,
+.category-main-title {
   color: #fff;
 }
 p {
@@ -165,7 +166,7 @@ body#content__{}
   margin: 0 auto 0 auto;
   text-transform: uppercase;
   text-align: center;
-  background-color: #fff;
+  background-color: #000;
   display: table;
   position: relative;
   padding: 0 1em;
@@ -360,6 +361,13 @@ ul.filters-button-group.search-only li input.quicksearch {
   -ms-transform: translateY(-50%) scale(1);
   -webkit-transform: translateY(-50%) scale(1);
   z-index: 1;
+}
+/* make card title always visible */
+.card .card-body .recent-article-teaser-body::after {
+  background: rgba(0,0,0,0.6) none repeat scroll 0 0;
+}
+.card .card-body .recent-article-teaser-body .hide_images_in_container {
+  opacity:1;
 }
 .card .card-body .recent-article-teaser-body .hide_images_in_container h3 {
   color: #fff;
