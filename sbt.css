@@ -313,7 +313,7 @@ ul.filters-button-group.search-only li input.quicksearch {
   z-index: 1;
 }
 .card .card-body .recent-article-teaser-body::before {
-  background: #222 none repeat scroll 0 0;
+  background: rgba(0,0,0,0.8) none repeat scroll 0 0;
   border-radius: 200px;
   content: "";
   display: block;
@@ -391,6 +391,7 @@ ul.filters-button-group.search-only li input.quicksearch {
   transform: scale(10);
   -ms-transform: scale(10);
   -webkit-transform: scale(10);
+  opacity: 1;
 }
 .card .card-body .recent-article-teaser-body .hide_images_in_container {
   opacity:1;
