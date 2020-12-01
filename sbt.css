@@ -130,6 +130,7 @@ body.homepages_members #homepageNav {
 #homepageNav .navigation > li > a {
   color: #fff;
   font-size: 2rem;
+  opacity: 0.7;
 }
 body.homepages #headerNav,
 body.homepages_members #headerNav {
