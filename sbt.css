@@ -31,7 +31,9 @@ h1, h2, h3, h4, h5, h6,
   color: #fff;
 }
 p,
-.main-section.container_for_general_settigns_formatting p {
+.main-section.container_for_general_settigns_formatting p,
+.main-section.container_for_general_settigns_formatting a,
+.main-section.container_for_general_settigns_formatting a p {
   color: #fff;
 }
 a {
