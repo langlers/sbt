@@ -501,6 +501,10 @@ ul.filters-button-group.search-only li input.quicksearch {
   margin-top: 3rem;
 }
 
+.blog-post {
+  border-bottom: none;
+}
+
 /* Forms */
 .form-control, .form-control.rounded, input[type="text"], input[type="password"], textarea {
   border-radius: 0;
