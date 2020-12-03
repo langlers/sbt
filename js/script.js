@@ -166,9 +166,13 @@
 
 
     //sticky navigation
+    /* DEBUG: test why sticky is being applied twice to main menu */
+    /*
     $(".for-sticky").sticky({
         topSpacing: 0
     });
+    */
+    
 
     // Video responsive
     //$("body").fitVids();
