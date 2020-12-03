@@ -169,6 +169,11 @@ body.homepages_members #headerNav {
   height: 100vh;
 }
 
+.hero-box {
+  display: inline-block;
+  max-width: 900px;
+}
+
 .home-section--our-mission {
   background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
   background-size: cover;
