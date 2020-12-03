@@ -110,15 +110,21 @@ body.is_admin {
 
 /* Hide default nav */
 #top-container {
+  height: 0;
+  width: 0;
+  opacity: 0;
   display: none;
 }
 
 /* Header Nav & Main Menus */
+.header.home-section .nav-head {
+  height: 100vh;
+}
 .header.home-section .logo {
   max-width: 90%;
 }
 .header.home-section .logo img.logo1 {
-  max-width: 1024px;
+  max-width: 1280px;
 }
 body.homepages #homepageNav,
 body.homepages_members #homepageNav {
@@ -144,7 +150,7 @@ body.homepages_members #homepageNav {
 }
 body.homepages #headerNav,
 body.homepages_members #headerNav {
-  display: none;
+  xx-display: none; /* changed to display topbar menu on homepage after all */
 }
 #headerNav .navigation li a {
   opacity: 0.6;
