@@ -189,7 +189,7 @@ body.homepages_members #headerNav {
   width: 600px;
 }
 .home-section--see-create-invest {
-
+  padding-top: 12rem;
 }
 
 @media (min-width: 768px) {
