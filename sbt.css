@@ -177,9 +177,14 @@ body.homepages_members #headerNav {
 .blog-post--image-wrapper {
   width: 100%;
   overflow: hidden;
+  height: 0;
+  padding-bottom: 60%;
 }
 .blog-post--image-wrapper img {
   width: 600px;
+}
+.home-section--see-create-invest {
+
 }
 
 @media (min-width: 768px) {
