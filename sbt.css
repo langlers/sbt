@@ -170,7 +170,7 @@ body.homepages_members #headerNav {
 }
 
 .home-section--our-mission {
-  background-image: rgba(0,0,0,.3), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
