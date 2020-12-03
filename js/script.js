@@ -172,7 +172,7 @@
         topSpacing: 0
     });
     */
-    
+
 
     // Video responsive
     //$("body").fitVids();

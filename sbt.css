@@ -108,6 +108,10 @@ body.is_admin {
   top: 0;
 }
 
+.hero-box--fullwidth {
+  max-width: 100%;
+}
+
 /* Hide default nav */
 #top-container {
   height: 0;
@@ -161,6 +165,16 @@ body.homepages_members #headerNav {
   padding-right: 50%;
   opacity: 0.4;
 }
+.home-h100 {
+  height: 100vh;
+}
+
+.home-section--our-mission {
+  background-image: rgba(0,0,0,.3), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 768px) {
   #headerNav .for-sticky > .container-fluid {
     width: 80%;
