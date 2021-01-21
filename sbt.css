@@ -560,7 +560,9 @@ ul.filters-button-group.search-only li input.quicksearch {
 
 
 /* Spreadsimple Sheet Data Styles */
-.body-content-data .sv-layout.sv-viewer-laptop .sv-viewer__container {
+
+/* Removed the following because all of spreadsimples styles are fixed widths */
+/* .body-content-data .sv-layout.sv-viewer-laptop .sv-viewer__container {
   width: auto;
   padding: 0;
-}
+}*/
