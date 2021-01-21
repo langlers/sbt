@@ -560,7 +560,7 @@ ul.filters-button-group.search-only li input.quicksearch {
 
 
 /* Spreadsimple Sheet Data Styles */
-.sv-layout.sv-viewer-laptop .sv-viewer__container {
+.body-content-data .sv-layout.sv-viewer-laptop .sv-viewer__container {
   width: auto;
   padding: 0;
 }
