@@ -181,6 +181,23 @@ body.homepages_members #headerNav {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.category--image-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 -15% 0;
+}
+.category--image-header--see {
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
+}
+.category--image-header--create {
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
+}
+.category--image-header--invest {
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
+}
+
+
 .blog-post--image-wrapper {
   width: 100%;
   overflow: hidden;
