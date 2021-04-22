@@ -263,6 +263,9 @@ body#content__{}
   position: relative;
   padding: 0 1em;
 }
+.category-actions { /* admin edit button */
+  display: none;
+}
 
 .sbt-box {
   border: 1px solid #ddd;
