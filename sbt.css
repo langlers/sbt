@@ -188,7 +188,7 @@ body.homepages_members #headerNav {
   margin: 0 -15% 0;
 }
 .category--image-header--see {
-  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/golive/Engage.jpg');
 }
 .category--image-header--create {
   background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
@@ -266,8 +266,7 @@ body#content__{}
 
 .sbt-box {
   border: 4px solid #ddd;
-  padding: 4rem 2rem 1rem;
-  margin-top: -50px;
+  padding: 2rem 2rem 1rem;
   text-align: center;
 }
 .sbt-box .content-box-title {
