@@ -270,6 +270,7 @@ body#content__{}
   text-align: center;
 }
 .sbt-box::after {
+  content: "";
   height: 10%;
   width: 80%;
   display: block;
