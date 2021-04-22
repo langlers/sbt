@@ -233,7 +233,7 @@ body#content__{}
   display: none;
   opacity: 0;
 }
-#footer-container .footer {
+.footer {
   background: #111 none repeat scroll 0 0;
 }
 .footer h3.widgettitle {
