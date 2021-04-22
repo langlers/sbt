@@ -253,6 +253,7 @@ body#content__{}
 }
 .sbt-box .content-box-title {
   padding-left: 0;
+  margin-bottom: 15px;
 }
 .sbt-box .content-box-title::after {
   margin-left: auto;
