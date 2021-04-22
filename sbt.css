@@ -257,6 +257,7 @@ body#content__{}
 .sbt-box .content-box-title::after {
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 5px solid #FFF;
 }
 .sbt-box .content-box-title i.fa {
   display: none;
