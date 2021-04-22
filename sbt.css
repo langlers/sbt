@@ -182,7 +182,15 @@ body.homepages_members #headerNav {
   background-repeat: no-repeat;
 }
 
-.category--image-header {
+.about-section--is {
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
+}
+.about-section--isnot {
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('//sh-sbtadmin.s3.us-west-2.amazonaws.com/images/87_DSC_6402relo.jpg');
+}
+
+.category--image-header,
+.section--image-header {
   background-size: cover;
   background-repeat: no-repeat;
   margin: -15% -15% 5%;
@@ -269,7 +277,8 @@ body#content__{}
   position: relative;
   padding: 0 1em;
 }
-.category-actions { /* admin edit button */
+.category-actions,
+.article-actions { /* admin edit button */
   display: none;
 }
 
