@@ -93,6 +93,7 @@ a:hover {
 
 
 
+
 /*
  *
  * Section Styles
@@ -158,6 +159,7 @@ body.homepages_members #headerNav {
 }
 #headerNav .navigation li a {
   opacity: 0.6;
+  text-transform: capitalize;
 }
 #headerNav .navigation li.sbt-secondary a {
   text-transform: lowercase;
