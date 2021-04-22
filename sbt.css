@@ -265,9 +265,16 @@ body#content__{}
 }
 
 .sbt-box {
-  border: 4px solid #ddd;
+  border: 1px solid #ddd;
   padding: 2rem 2rem 1rem;
   text-align: center;
+}
+.sbt-box::after {
+  height: 10%;
+  width: 80%;
+  display: block;
+  margin-top: -10px;
+  background-color: #000;
 }
 .sbt-box .content-box-title {
   padding-left: 0;
